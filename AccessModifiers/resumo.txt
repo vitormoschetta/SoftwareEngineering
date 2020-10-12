@@ -1,0 +1,21 @@
+Modificadores de Acesso:
+
+Public: 
+  Em qualquer lugar (fora do assembly/namespace precisa de referencia);
+
+Private: 
+  Somente na mesma classe
+
+Protected: 
+  Na mesma classe e em classes derivadas (herança)
+
+Internal: 
+  Somente no mesmo assembly/namespace
+
+protected internal: 
+  No mesmo assembly/namespace ou em um derivado da classe em outro assembly.
+  Na classe derivada podemos criar métodos publicos de acesso ao parâmetro.
+
+protected private:
+  Na mesma classe ou derivado da classe no mesmo assembly.
+	

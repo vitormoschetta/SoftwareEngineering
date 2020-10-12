@@ -2,13 +2,13 @@ namespace App.Public
 {
     public class PublicProduct
     {
-        public string Name;     // <-- acessível em qualquer lugar
+        public string Name;     // <-- acessível para recuperar e alterar
     }
 
     public class PublicProductB
     {
         public string Name { get; private set; } = "Product B";    // <-- acessível para recuperar, mas não para modificar
-    }
+    }                                                              // modificação deve ser implementada via método publico
 
     public class PublicProductC
     {
@@ -32,6 +32,9 @@ namespace App.Public
         }
 
         public string Name { get; private set; }    // <-- acessível para recuperar, mas não para modificar
+                                                    // modificação deve ser implementada via método publico
 
     }
+
+
 }

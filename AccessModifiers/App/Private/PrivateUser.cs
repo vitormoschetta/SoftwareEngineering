@@ -1,14 +1,13 @@
-
-namespace App.Private // Vamos privar apenas as propriedades aqui
+namespace App.Private
 {
-    public class PrivateProduct // <-- pode instanciar um objeto 
+    class PrivateUser  // <-- Sem declarar o 'public' na classe, elas se tornam inacessíveis fora do assembly/namespace
     {
-        private string Name;    // <-- mas não acessa a propriedade
+        private string Name;
     }
 
-    public class PrivateProductB
+    class PrivateUserB
     {
-        private string Name;                    // <-- acessível pelos métodos públicos
+        private string Name;
         public void SetName(string name)
         {
             if (!string.IsNullOrEmpty(name.Trim()))
@@ -20,9 +19,9 @@ namespace App.Private // Vamos privar apenas as propriedades aqui
         }
     }
 
-    public class PrivateProductC
+    class PrivateUserC
     {
-        public PrivateProductC(string name)
+        public PrivateUserC(string name)
         {
             Name = name;
         }
@@ -33,6 +32,4 @@ namespace App.Private // Vamos privar apenas as propriedades aqui
             return Name;
         }
     }
-
-
 }
