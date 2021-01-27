@@ -5,16 +5,21 @@ namespace Problem
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            /* 
-            Problema: Dependendo da escolha do usuário devo instanciar 
-            um objeto diferente, que executa porém um método. Ou seja, 
-            as classes possuem um método em comum, fazem parte de um mesmo
-            contexto. 
+        /* 
+            Problema: 
+            Imagine que temos um grupo de classes semelhantes, em um mesmo contexto
+            (as classes estão na pasta 'Models').
+            
+            Imagine também que de acordo com o parâmetro fornecido pelo usuário, 
+            o nosso código deve identificar qual classe desse grupo deve ser 
+            instanciada.           
+            
+            Vamos ver como ficaria SEM o uso do padrão Factory:
+        */
 
-            Veja como ficaria sem o uso do padrão Factory:
-            */
+        static void Main(string[] args)
+        {            
+
             Console.WriteLine("Escolha uma opção: \n");
             Console.WriteLine("01 - Inglês \n");
             Console.WriteLine("02 - Espanhol \n");
