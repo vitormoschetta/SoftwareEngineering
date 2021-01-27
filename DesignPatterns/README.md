@@ -5,7 +5,10 @@ Onde implementamos o código naturalmente, sem usar o padrão referenciado. Iden
 
 2. "Pattern":
 Onde implementamos a mesma solução implementada em "Problem" porém utilizando o design pattern referenciado.
+
+Obs: Os comentários que esclarecem o problema estão localizados no arquivo 'Program.cs'.
 <br>
+
 
 ## Factory 
 O padrão de fábrica é usado para abstrair a construção/instância de classes diferentes que estão em um mesmo contexto, e que executam um método/ação em comum. 
