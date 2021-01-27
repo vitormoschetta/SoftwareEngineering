@@ -1,12 +1,12 @@
 ## Introdução
 Em todos os patterns existem duas pastas basicas: 
-1. Problem:
+1. **Problem**:
 Onde implementamos o código naturalmente, sem usar o padrão referenciado. Identificaremos nele os pontos a serem melhorados.
 
-2. "Pattern":
+2. **Pattern**:
 Onde implementamos a mesma solução implementada em "Problem" porém utilizando o design pattern referenciado.
 
-Obs: Os comentários que esclarecem o problema estão localizados no arquivo 'Program.cs'.
+Obs: Os comentários que esclarecem o problema estão localizados no arquivo **Program.cs**.
 <br>
 
 
