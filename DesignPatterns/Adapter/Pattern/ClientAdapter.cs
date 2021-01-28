@@ -1,11 +1,9 @@
-using Pattern.Interfaces;
-
-namespace Pattern.Models
+namespace Pattern
 {
-    public class MySqlAdapter : IDbAdapter
+    public class ClientAdapter : IDb
     {
         private MySqlCommands _mysql;
-        public MySqlAdapter(MySqlCommands mysql)
+        public ClientAdapter(MySqlCommands mysql)
         {
             _mysql = mysql;
         }

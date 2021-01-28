@@ -1,24 +1,18 @@
-﻿using System;
-using Problem.Models;
-
-namespace Problem
+﻿namespace Problem
 {
     class Program
     {        
+
         static void Main(string[] args)
         {
-            var client = new Commands();
-            client.Insert();            
-
             /*
-                Problema: Como fazer com que o 'client' acesse os Métodos 'InsertMySql', 'UpdateMySql'
-                e 'DeleteMySql' da classe 'MySQLCommands' implementando os métodos da interface 'IDbAdapter'?
+            Problema: Como fazer com que o 'Client' acesse os Métodos 'InsertMySql', 'UpdateMySql'
+            e 'DeleteMySql' da classe 'MySQLCommands' implementando os métodos da interface 'IDb'?
 
-                Perceba que o nome dos métodos são diferentes.
+            Perceba que o nome dos métodos são diferentes.
 
-                Obs: Não vale instanciar a classe 'MySQLCommands'.
+            Obs: Tem que usar a interface IDb obrigatoriamente.
             */
-
         }
     }
 }

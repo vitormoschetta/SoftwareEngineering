@@ -1,9 +1,8 @@
 using System;
-using Problem.Interfaces;
 
-namespace Problem.Models
+namespace Problem
 {
-    public class MySQLCommands 
+    public class MySQLCommands
     {
         public void InsertMySql()
         {

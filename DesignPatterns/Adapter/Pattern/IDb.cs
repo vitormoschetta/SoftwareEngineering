@@ -1,6 +1,6 @@
-namespace Pattern.Interfaces
+namespace Pattern
 {
-    public interface IDbAdapter
+    public interface IDb
     {
         void Insert();
         void Update();

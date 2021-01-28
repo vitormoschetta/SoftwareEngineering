@@ -1,6 +1,6 @@
 using System;
 
-namespace Pattern.Models
+namespace Pattern
 {
     public class MySqlCommands
     {
