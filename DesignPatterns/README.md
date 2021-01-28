@@ -10,6 +10,8 @@ Onde implementamos o código naturalmente, sem usar o padrão referenciado. Iden
 Onde implementamos a mesma solução implementada em "Problem" porém utilizando o design pattern referenciado.
 
 Obs: Os comentários que esclarecem o problema estão localizados no arquivo **Program.cs**.
+
+obs 2: Alguns padrões podem ter mais de uma pasa 'Pattern'. Isto significa que há mais de uma forma de aplicar o design patter.
 <br>
 
 

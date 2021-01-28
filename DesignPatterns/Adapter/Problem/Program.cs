@@ -11,7 +11,7 @@
 
             Perceba que o nome dos métodos são diferentes.
 
-            Obs: Tem que usar a interface IDb obrigatoriamente.
+            Obs: Não podemos instanciar a classe 'MySqlCommands'.
             */
         }
     }
