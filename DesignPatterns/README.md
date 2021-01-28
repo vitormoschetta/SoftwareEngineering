@@ -13,6 +13,20 @@ Obs: Os comentários que esclarecem o problema estão localizados no arquivo **P
 <br>
 
 
+## Adapter
+O padrão Adapter tem o objetivo de converter a interface de uma classe em outra interface esperada pelos clientes. Ou seja, permite a comunicação entre classes que não poderiam trablhar juntas devido à incompatibilidade de suas interfaces.
+
+Há duas formas de aplicar o padrão Adapter:
+
+1. Um **adaptador de classe** usa herança múltipla (estendendo uma classe e / ou implementando uma ou mais classes) para adaptar uma interface a outra. 
+
+2. Um **adaptador de objeto** depende agregação de objetos.
+
+#### Onde usar?
+- Quando você deseja usar uma classe existente, e sua interface não corresponde ao que você precisa.
+<br>
+
+
 ## Factory 
 O padrão de fábrica é usado para abstrair a construção/instância de classes diferentes que estão em um mesmo contexto, e que executam um método/ação em comum. 
 
@@ -30,3 +44,51 @@ A fábrica pode retornar uma instância de uma das várias classes possíveis (e
 <br>
 
 
+
+
+public class ClasseExistente    // <-- a ser adaptada
+    {
+        public void MetodoUtil(string texto) {
+            Console.WriteLine(texto);
+        }
+    }
+
+
+    // Usando herança
+    public class AdaptadorHeranca : ClasseExistente
+    {
+        public void Operacao() {
+            MetodoUtil("Texto aqui");
+        }
+    }
+
+
+    // Usando composição
+    public class AdaptadorComposicao 
+    {
+        private ClasseExistente _existente;
+        public AdaptadorComposicao(ClasseExistente existente)
+        {
+            _existente = existente;
+        }
+
+        public void Operacao() {
+            _existente.MetodoUtil("Texto aqui");
+        }
+    }
+    
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // usando herança
+            AdaptadorHeranca adaptadorHeranca = new AdaptadorHeranca();
+            adaptadorHeranca.Operacao();
+
+
+            // usando composição
+            ClasseExistente existente = new ClasseExistente();
+            AdaptadorComposicao adaptadorComposicao = new AdaptadorComposicao(existente);
+            adaptadorComposicao.Operacao();
+        }
+    }    
