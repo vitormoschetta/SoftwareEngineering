@@ -57,3 +57,8 @@ A fábrica pode retornar uma instância de uma das várias classes possíveis (e
 - A fábrica encapsula a criação de objetos. Isso pode ser útil se o processo de criação é muito complexo.
 <br>
 
+
+
+## Singleton 
+O padrão Singleton oferece a possibilidade de controlar o número de instâncias; Como o nome já diz, devemos limitar em apenas uma instância determinado objeto.
+
