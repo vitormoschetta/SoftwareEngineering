@@ -7,12 +7,7 @@ namespace Problem
         private static List<int> list = new List<int>();                
         public FileLogger()
         {
-            list.Add(list.Count + 1);
-            // if (logger == null) {
-            //     logger = new FileLogger().Instancia = "Instancia 01";
-            // }                   
-
-            // return logger;
+            list.Add(list.Count + 1);          
         }    
 
         public string GetInstance()
