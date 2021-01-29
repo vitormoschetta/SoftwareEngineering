@@ -3,6 +3,7 @@
 
 ## Introdução
 Em todos os patterns existem duas pastas basicas: 
+
 1. **Problem**:
 Onde implementamos o código naturalmente, sem usar o padrão referenciado. Identificaremos nele os pontos a serem melhorados.
 
@@ -27,6 +28,42 @@ Há duas formas de aplicar o padrão Adapter:
 #### Onde usar?
 - Quando você deseja usar uma classe existente, e sua interface não corresponde ao que você precisa.
 <br>
+
+
+
+## Facade
+Este padrão de design fornece uma interface unificada para um conjunto de interfaces em um subsistema. Ele define uma interface de nível superior que torna o subsistema mais fácil de usar. Uma fachada é um objeto que fornece uma interface simplificada para um corpo maior de código, como uma biblioteca de classes. 
+
+Um bom cenário para exemplo de uso seria envolver várias APIs mal projetadas com uma única API bem projetada, agrupando-as por contexto por exemplo.
+
+namespace Facade
+{
+    // Facade é o mesmo conceito usado no Handler do DDD.
+    // Uma classe gerencia todo o processo, servindo de 'Fachada', facilitando as coisas.
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Cria uma instância do Facade
+            Facade concedeCredito = new Facade();
+
+            // Cria uma instância de um  novo Cliente informando o nome
+            Cliente cliente1 = new Cliente("Fulano");
+
+            //Utiliza o Facade para verificar condições de concessão ou não
+            bool resultado = concedeCredito.ConcederEmprestimo(cliente1, 199000.00);
+
+            //exibe o resultado
+            Console.WriteLine("O empréstimo pleiteado pelo cliente " + cliente1.Nome + " foi  " + (resultado ? "Aprovado" : "Negado"));
+
+            //aguarda
+            Console.ReadKey();
+        }
+    }
+}
+
+<br>
+
 
 
 ## Factory 
